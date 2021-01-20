@@ -294,11 +294,22 @@ h3 {
   color: #773cfc;
 }
 
+.banner .banner-content .title.forPublication {
+  text-align: right;
+}
+
 .banner .banner-content .title-sup {
   font-size: 12px;
   margin-left: 15px;
   color: #b1b1b1;
   font-weight: lighter;
+}
+
+.banner .banner-content .for-publication {
+  text-align: right;
+  font-size: 11.2782px;
+  line-height: 17.29323px;
+  color: #773cfc;
 }
 
 .banner .banner-content .other-wrap {
@@ -1212,5 +1223,533 @@ h3 {
   left: 0;
   width: 80px;
   border-top: 1px solid white;
+}
+
+.single-section {
+  margin: 0 15%;
+  margin-top: 45px;
+}
+
+.single-section .news-section {
+  background-color: transparent;
+}
+
+.single-section .news-section .news-item {
+  border: 1px solid #c3c3c3;
+}
+
+.single-section .news-section .news-item:hover {
+  border-color: #c3c3c3;
+}
+
+.single-section h2 {
+  font-size: 22.55639px;
+  line-height: 30.07519px;
+}
+
+.single-section p {
+  font-size: 13.53383px;
+  line-height: 23.30827px;
+  margin: 20px auto;
+}
+
+.single-section .social-share {
+  margin-top: 30px;
+  padding: 40px 0;
+  border-top: 1px solid #d1d0d0;
+  border-bottom: 1px solid #d1d0d0;
+}
+
+.single-section .social-share .name {
+  font-size: 11.2782px;
+  line-height: 18.04511px;
+  color: #b4b4b4;
+  margin-bottom: 10px;
+}
+
+.single-section .social-share .name span {
+  color: #773cfc;
+  margin-left: 5px;
+}
+
+.single-section .social-share .share-icon {
+  font-size: 11.2782px;
+  line-height: 18.04511px;
+  color: #b4b4b4;
+}
+
+.single-section .social-share .share-icon a {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+  border: 1px solid gray;
+  text-align: center;
+  line-height: 22px;
+  color: gray;
+}
+
+.single-section .social-share .share-icon a:hover {
+  color: #773cfc;
+  border: 1px solid #773cfc;
+}
+
+.people-banner {
+  background-color: white;
+  margin-left: 90px;
+}
+
+.people-banner .top-wrap ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 15px;
+  list-style: none;
+}
+
+.people-banner .top-wrap ul li {
+  margin-left: 15px;
+}
+
+.people-banner .top-wrap ul a {
+  font-size: 12px;
+  font-weight: lighter;
+  color: gray;
+}
+
+.people-banner .top-wrap ul a span {
+  font-weight: bold;
+}
+
+.people-banner .top-wrap ul a:hover {
+  color: #773cfc;
+}
+
+.people-banner .center-wrap {
+  padding: 90px 0px 20px 0px;
+}
+
+.people-banner .main-title {
+  font-size: 36.09023px;
+  line-height: 45.11278px;
+  text-align: right;
+  font-weight: bold;
+  color: black;
+}
+
+.people-banner hr {
+  margin-top: 25px;
+  border-top: 2px solid gray;
+}
+
+.people-banner .quote {
+  margin-top: 10px;
+  font-size: 11.2782px;
+  line-height: 17.29323px;
+}
+
+.people-banner .quote .quote-bottom {
+  text-align: center;
+}
+
+.people-banner .join-team {
+  width: 135px;
+  height: 120px;
+  border-top-left-radius: 100%;
+  padding: 70px 0px 0px 45px;
+  left: 44px;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  font-size: 12px;
+  margin-right: 0;
+  margin-left: auto;
+  position: relative;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.people-banner .join-team a {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: black;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  padding-left: 12px;
+  font-size: 10px;
+  color: white;
+  border-radius: 50%;
+  display: none;
+}
+
+.people-banner .join-team:hover {
+  background-color: #773cfc;
+  color: white;
+  border-color: #773cfc;
+}
+
+.people-banner .join-team:hover a {
+  display: inline-block;
+}
+
+.people-banner .join-team:hover span {
+  color: white;
+}
+
+.people-banner .join-team span {
+  font-size: 11.2782px;
+  line-height: 17.29323px;
+  font-weight: 600;
+  color: black;
+}
+
+.team {
+  margin: 45px auto;
+}
+
+.team .team-item {
+  margin-bottom: 25px;
+  text-decoration: none;
+  display: block;
+}
+
+.team .team-item .name {
+  text-decoration: none;
+  font-size: 19.54887px;
+  line-height: 27.06767px;
+  margin-top: 20px;
+  color: #000000;
+}
+
+.team .team-item .designation {
+  font-size: 11.2782px;
+  color: #5c5c5c;
+  text-decoration: none;
+}
+
+.team .team-item:hover .name {
+  color: #773cfc;
+}
+
+@-webkit-keyframes peopleModal {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes peopleModal {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@-webkit-keyframes peopleModalP {
+  0% {
+    padding-top: 25%;
+  }
+  100% {
+    padding-top: 0%;
+  }
+}
+
+@keyframes peopleModalP {
+  0% {
+    padding-top: 25%;
+  }
+  100% {
+    padding-top: 0%;
+  }
+}
+
+.people-modal {
+  display: none;
+  height: 100vh;
+  background: #00000063;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding-left: 30%;
+}
+
+.people-modal .people-wrap {
+  background-color: #efefef;
+  position: relative;
+}
+
+.people-modal .people-wrap .close-btn {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  line-height: 35px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.people-modal .people-wrap .close-btn:hover {
+  background-color: #773cfc;
+}
+
+.people-modal .people-wrap .img-container {
+  text-align: center;
+  background: linear-gradient(45deg, #e1e2e4, #e3e4e6);
+}
+
+.people-modal .bottom-wrap {
+  background-color: white;
+  padding: 30px;
+}
+
+.people-modal .bottom-wrap .name {
+  font-size: 19.54887px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.people-modal .bottom-wrap .designation {
+  font-size: 11.2782px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.people-modal .bottom-wrap ul {
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 25px 0;
+  list-style: none;
+}
+
+.people-modal .bottom-wrap ul li {
+  font-size: 11.2782px;
+  line-height: 19.54887px;
+  color: #5c5c5c;
+}
+
+.people-modal .bottom-wrap p {
+  font-size: 11.2782px;
+  line-height: 18.79699px;
+}
+
+.people-modal .bottom-wrap .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.people-modal .bottom-wrap .social-links a {
+  line-height: 30px;
+  border-radius: 50%;
+  color: white;
+  background-color: #292929;
+  margin: 0px 5px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}
+
+.people-modal.show {
+  display: block;
+}
+
+.people-modal.show .people-wrap {
+  -webkit-animation-name: peopleModal;
+          animation-name: peopleModal;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.people-modal.show .people-wrap .bottom-wrap p {
+  -webkit-animation-name: peopleModalP;
+          animation-name: peopleModalP;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.service-banner {
+  background-color: white;
+  margin-left: 90px;
+  height: calc(100vh - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service-banner .top-wrap ul {
+  position: absolute;
+  top: 0;
+  right: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 15px;
+  list-style: none;
+}
+
+.service-banner .top-wrap ul li {
+  margin-left: 15px;
+}
+
+.service-banner .top-wrap ul a {
+  font-size: 12px;
+  font-weight: lighter;
+  color: gray;
+}
+
+.service-banner .top-wrap ul a span {
+  font-weight: bold;
+}
+
+.service-banner .top-wrap ul a:hover {
+  color: #773cfc;
+}
+
+.service-banner .center-wrap {
+  padding: 45px 0px 20px 0px;
+}
+
+.service-banner .main-title {
+  font-size: 36.09023px;
+  line-height: 45.11278px;
+  text-align: right;
+  font-weight: bold;
+  color: black;
+}
+
+.service-banner hr {
+  margin-top: 25px;
+  border-top: 2px solid gray;
+}
+
+.service-banner .quote {
+  margin-top: 10px;
+  font-size: 11.2782px;
+  line-height: 17.29323px;
+}
+
+.service-banner .quote .quote-bottom {
+  text-align: center;
+}
+
+.fullfill-welcome-section {
+  padding: 60px 0px;
+}
+
+.fullfill-welcome-section .text-box1 {
+  color: #000;
+  font-size: 19.54887px;
+  line-height: 27.06767px;
+  font-weight: 500;
+}
+
+.fullfill-welcome-section .text-box1 span {
+  color: #773cfc;
+}
+
+.fullfill-welcome-section .text-box {
+  margin-bottom: 45px;
+  font-size: 13.53383px;
+  line-height: 20.30075px;
+}
+
+.fullfill-welcome-section .back-text {
+  font-size: 180px;
+  font-weight: bold;
+  color: #e1e1e1fa;
+}
+
+.fullfill-welcome-section .back-text span {
+  font-size: 90px;
+  margin-top: -90px;
+  display: block;
+}
+
+.fulfill .container {
+  border-top: 1px solid #dadada;
+}
+
+.fulfill .text-box1 {
+  color: #000000;
+  font-size: 19.54887px;
+  line-height: 27.06767px;
+  font-weight: 500;
+  margin-top: 60px;
+}
+
+.fulfill .text-box {
+  margin-top: 50px;
+  font-size: 13.53383px;
+  line-height: 20.30075px;
+}
+
+.fulfill .text-box ul {
+  margin: 0;
+  padding: 0;
+  font-size: 15.03759px;
+  font-weight: bold;
+  list-style: none;
+  line-height: 20.30075px;
+}
+
+.fulfill .text-box ul li {
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.fulfill .text-box ul li::before {
+  content: attr(data-content);
+  position: absolute;
+  top: -10px;
+  font-size: 10px;
+  left: -20px;
+  color: #773cfc;
+}
+
+.fulfill .back-text {
+  font-size: 180px;
+  font-weight: bold;
+  color: #e1e1e1fa;
+}
+
+.fulfill .back-text span {
+  font-size: 90px;
+  margin-top: -90px;
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

@@ -181,3 +181,8 @@ mainBtn.addEventListener("click", () => {
   document.getElementById("navbar").classList.toggle("pressed");
   document.querySelector(".nav-model").classList.toggle("show");
 });
+
+const peopleModal = () => {
+  const modal = document.getElementById("peopleModal");
+  modal.classList.toggle("show");
+};

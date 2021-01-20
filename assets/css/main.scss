@@ -247,11 +247,20 @@ h3 {
         color: #773cfc;
       }
     }
+    .title.forPublication {
+      text-align: right;
+    }
     .title-sup {
       font-size: 12px;
       margin-left: 15px;
       color: #b1b1b1;
       font-weight: lighter;
+    }
+    .for-publication {
+      text-align: right;
+      @include font-size(15);
+      @include line-height(23);
+      color: #773cfc;
     }
     .other-wrap {
       max-width: 290px;
@@ -959,6 +968,431 @@ h3 {
         width: 80px;
         border-top: 1px solid white;
       }
+    }
+  }
+}
+
+// single section
+.single-section {
+  margin: 0 15%;
+  margin-top: 45px;
+  .news-section {
+    background-color: transparent;
+    .news-item {
+      border: 1px solid #c3c3c3;
+      &:hover {
+        border-color: #c3c3c3;
+      }
+    }
+  }
+  h2 {
+    @include font-size(30);
+    @include line-height(40);
+  }
+  p {
+    @include font-size(18);
+    @include line-height(31);
+    margin: 20px auto;
+  }
+  .social-share {
+    margin-top: 30px;
+    padding: 40px 0;
+    border-top: 1px solid rgb(209, 208, 208);
+    border-bottom: 1px solid rgb(209, 208, 208);
+    .name {
+      @include font-size(15);
+      @include line-height(24);
+      color: #b4b4b4;
+      margin-bottom: 10px;
+      span {
+        color: #773cfc;
+        margin-left: 5px;
+      }
+    }
+    .share-icon {
+      @include font-size(15);
+      @include line-height(24);
+      color: #b4b4b4;
+      a {
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 10px;
+        border: 1px solid gray;
+        text-align: center;
+        line-height: 22px;
+        color: gray;
+        &:hover {
+          color: #773cfc;
+          border: 1px solid #773cfc;
+        }
+      }
+    }
+  }
+}
+
+// people banner
+.people-banner {
+  background-color: white;
+  margin-left: 90px;
+  .top-wrap ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    list-style: none;
+    li {
+      margin-left: 15px;
+    }
+    a {
+      font-size: 12px;
+      font-weight: lighter;
+      color: gray;
+      span {
+        font-weight: bold;
+      }
+      &:hover {
+        color: #773cfc;
+      }
+    }
+  }
+  .center-wrap {
+    padding: 90px 0px 20px 0px;
+  }
+  .main-title {
+    @include font-size(48);
+    @include line-height(60);
+    text-align: right;
+    font-weight: bold;
+    color: black;
+  }
+  hr {
+    margin-top: 25px;
+    border-top: 2px solid gray;
+  }
+  .quote {
+    margin-top: 10px;
+    @include font-size(15);
+    @include line-height(23);
+    .quote-bottom {
+      text-align: center;
+    }
+  }
+  .join-team {
+    width: 135px;
+    height: 120px;
+    border-top-left-radius: 100%;
+    padding: 70px 0px 0px 45px;
+    left: 44px;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    font-size: 12px;
+    margin-right: 0;
+    margin-left: auto;
+    position: relative;
+    transition: all 0.3s linear;
+    a {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background: black;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      padding-left: 12px;
+      font-size: 10px;
+      color: white;
+      border-radius: 50%;
+      display: none;
+    }
+    &:hover {
+      background-color: #773cfc;
+      color: white;
+      border-color: #773cfc;
+      a {
+        display: inline-block;
+      }
+      span {
+        color: white;
+      }
+    }
+    span {
+      @include font-size(15);
+      @include line-height(23);
+      font-weight: 600;
+      color: black;
+    }
+  }
+}
+
+.team {
+  margin: 45px auto;
+
+  .team-item {
+    margin-bottom: 25px;
+    text-decoration: none;
+    display: block;
+    .name {
+      text-decoration: none;
+      @include font-size(26);
+      @include line-height(36);
+      margin-top: 20px;
+      color: #000000;
+    }
+    .designation {
+      @include font-size(15);
+      color: #5c5c5c;
+      text-decoration: none;
+    }
+    &:hover {
+      .name {
+        color: #773cfc;
+      }
+    }
+  }
+}
+@keyframes peopleModal {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+@keyframes peopleModalP {
+  0% {
+    padding-top: 25%;
+  }
+
+  100% {
+    padding-top: 0%;
+  }
+}
+.people-modal {
+  display: none;
+  height: 100vh;
+  background: #00000063;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding-left: 30%;
+  .people-wrap {
+    background-color: #efefef;
+    position: relative;
+
+    .close-btn {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      height: 35px;
+      width: 35px;
+      text-align: center;
+      background-color: black;
+      color: white;
+      line-height: 35px;
+      font-size: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      &:hover {
+        background-color: #773cfc;
+      }
+    }
+    .img-container {
+      text-align: center;
+      background: linear-gradient(45deg, #e1e2e4, #e3e4e6);
+    }
+  }
+  .bottom-wrap {
+    background-color: white;
+    padding: 30px;
+    .name {
+      @include font-size(26);
+      line-height: 25px;
+      color: #000000;
+    }
+    .designation {
+      @include font-size(15);
+      color: gray;
+      margin-bottom: 20px;
+    }
+    ul {
+      border-top: 1px solid #d6d6d6;
+      border-bottom: 1px solid #d6d6d6;
+      padding: 25px 0;
+      list-style: none;
+      li {
+        @include font-size(15);
+        @include line-height(26);
+        color: #5c5c5c;
+      }
+    }
+    p {
+      @include font-size(15);
+      @include line-height(25);
+    }
+    .social-links {
+      display: flex;
+      justify-content: flex-start;
+      a {
+        line-height: 30px;
+        border-radius: 50%;
+        color: white;
+        background-color: #292929;
+        margin: 0px 5px;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+      }
+    }
+  }
+}
+.people-modal.show {
+  display: block;
+  .people-wrap {
+    animation-name: peopleModal;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    .bottom-wrap {
+      p {
+        animation-name: peopleModalP;
+        animation-duration: 1.5s;
+        animation-delay: 0s;
+        animation-timing-function: ease;
+      }
+    }
+  }
+}
+
+// service page
+.service-banner {
+  background-color: white;
+  margin-left: 90px;
+  height: calc(100vh - 80px);
+  display: flex;
+  position: relative;
+  align-items: center;
+  .top-wrap ul {
+    position: absolute;
+    top: 0;
+    right: 90px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    list-style: none;
+    li {
+      margin-left: 15px;
+    }
+    a {
+      font-size: 12px;
+      font-weight: lighter;
+      color: gray;
+      span {
+        font-weight: bold;
+      }
+      &:hover {
+        color: #773cfc;
+      }
+    }
+  }
+  .center-wrap {
+    padding: 45px 0px 20px 0px;
+  }
+  .main-title {
+    @include font-size(48);
+    @include line-height(60);
+    text-align: right;
+    font-weight: bold;
+    color: black;
+  }
+  hr {
+    margin-top: 25px;
+    border-top: 2px solid gray;
+  }
+  .quote {
+    margin-top: 10px;
+    @include font-size(15);
+    @include line-height(23);
+    .quote-bottom {
+      text-align: center;
+    }
+  }
+}
+.fullfill-welcome-section {
+  padding: 60px 0px;
+  .text-box1 {
+    color: #000;
+    @include font-size(26);
+    @include line-height(36);
+    font-weight: 500;
+    span {
+      color: #773cfc;
+    }
+  }
+  .text-box {
+    margin-bottom: 45px;
+    @include font-size(18);
+    @include line-height(27);
+  }
+  .back-text {
+    font-size: 180px;
+    font-weight: bold;
+    color: #e1e1e1fa;
+    span {
+      font-size: 90px;
+      margin-top: -90px;
+      display: block;
+    }
+  }
+}
+.fulfill {
+  .container {
+    border-top: 1px solid #dadada;
+  }
+  .text-box1 {
+    color: #000000;
+    @include font-size(26);
+    @include line-height(36);
+    font-weight: 500;
+    margin-top: 60px;
+  }
+  .text-box {
+    margin-top: 50px;
+    @include font-size(18);
+    @include line-height(27);
+    ul {
+      margin: 0;
+      padding: 0;
+      @include font-size(20);
+      font-weight: bold;
+      list-style: none;
+      @include line-height(27);
+      li {
+        margin-bottom: 35px;
+        position: relative;
+      }
+      li::before {
+        content: attr(data-content);
+        position: absolute;
+        top: -10px;
+        font-size: 10px;
+        left: -20px;
+        color: #773cfc;
+      }
+    }
+  }
+  .back-text {
+    font-size: 180px;
+    font-weight: bold;
+    color: #e1e1e1fa;
+    span {
+      font-size: 90px;
+      margin-top: -90px;
+      display: block;
     }
   }
 }
