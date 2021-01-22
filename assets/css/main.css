@@ -886,6 +886,7 @@ h3 {
 
 .footer .bottom-footer .second-wrap {
   color: gray;
+  font-size: 18px;
 }
 
 @media (max-width: 1024px) {
