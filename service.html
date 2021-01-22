@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>FSG Consulting</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -27,7 +32,7 @@
   <body>
     <nav class="navbar" id="navbar">
       <div class="logo">
-        <a href="">
+        <a href="index.html">
           <div class="name">FSG <span class="sub">TM</span></div>
           <div class="sub-name">consulting</div>
         </a>
@@ -47,23 +52,23 @@
         <div class="first-wrap">
           <ul>
             <li>
-              <a href="" class="title">Home</a>
+              <a href="index.html" class="title">Home</a>
               <div class="sub-title">What we do and how we do it</div>
             </li>
             <li>
-              <a href="" class="title">Services</a>
+              <a href="service.html" class="title">Services</a>
               <div class="sub-title">What we do and how we do it</div>
             </li>
             <li>
-              <a href="" class="title">People</a>
+              <a href="people.html" class="title">People</a>
               <div class="sub-title">Who will work on your side</div>
             </li>
             <li>
-              <a href="" class="title">News & Insights</a>
+              <a href="news.html" class="title">News & Insights</a>
               <div class="sub-title">Who will work on your side</div>
             </li>
             <li>
-              <a href="" class="title">Contact Us</a>
+              <a href="contact.html" class="title">Contact Us</a>
               <div class="sub-title">Who will work on your side</div>
             </li>
           </ul>
@@ -244,11 +249,48 @@
         </div>
       </div>
     </section>
+    <section class="principle">
+      <div class="container">
+        <div class="main-title">Our principles of work</div>
+        <div class="subtitle">
+          We provide several financing options that saves you time and money
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="text">Trust</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="text">Honesty</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="text">Consulting</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="text">Trust</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="text">Discipline</div>
+            </div>
+          </div>
 
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+        </div>
+        <div class="bottom-text">
+          We work with you to provide a financial solution that meets the unique
+          needs of your business. We provide several financing options that
+          saves you time and money
+        </div>
+      </div>
+    </section>
     <div class="contact-banner">
       <div
         class="contact-wrap"
-        style="background: url('assets/images/contact-banner.png') no-repeat"
+        style="
+          background: url('assets/images/contact-banner.png') no-repeat;
+          background-size: cover;
+        "
       >
         <div class="contact-content">
           <div class="title">Contact us</div>
@@ -387,6 +429,34 @@
       integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0="
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: "4",
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false,
+        },
+        speed: 400,
+        coverflowEffect: {
+          rotate: 30,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
