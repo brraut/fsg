@@ -213,10 +213,10 @@ h3 {
     margin-right: 10px;
     .main-button {
       &::before {
-        height: 220px;
+        height: 160px;
       }
       &::after {
-        height: 220px;
+        height: 160px;
       }
     }
   }
@@ -246,6 +246,14 @@ h3 {
 }
 .playModal.show {
   display: block;
+}
+@media (max-width: 768px) {
+  .playModal {
+    padding: 40% 15px;
+    iframe {
+      height: 35vh !important;
+    }
+  }
 }
 .banner {
   position: relative;
@@ -408,17 +416,27 @@ h3 {
 }
 @media (max-width: 576px) {
   .banner {
+    &::after {
+      background: #ffffffdb;
+    }
+    .scroll-btn {
+      color: black;
+    }
     margin-left: 70px;
     .banner-content {
+      width: 260px;
+      margin-right: 15px;
       .title {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 22px;
+        line-height: 30px;
       }
     }
     .banner-inner {
       .top-wrap {
         ul {
           display: block;
+          margin-right: 0px;
+          padding-left: 0px;
         }
       }
     }
@@ -1065,6 +1083,7 @@ h3 {
         font-size: 22px;
       }
       .second-wrap {
+        margin-top: 10%;
         padding: 15px;
       }
     }
@@ -1388,7 +1407,15 @@ h3 {
 @media (max-width: 576px) {
   .news-banner {
     margin-left: 70px;
+    &::after {
+      background: #ffffffdb;
+    }
+    .scroll-btn {
+      color: black;
+    }
     .banner-content {
+      width: 260px;
+      margin-right: 15px;
       .title {
         font-size: 32px;
         line-height: 40px;
@@ -1398,6 +1425,8 @@ h3 {
       .top-wrap {
         ul {
           display: block;
+          padding-left: 0px;
+          margin-right: 0px;
         }
       }
     }

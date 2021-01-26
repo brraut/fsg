@@ -247,10 +247,10 @@ h3 {
     margin-right: 10px;
   }
   .navbar .main-button::before {
-    height: 220px;
+    height: 160px;
   }
   .navbar .main-button::after {
-    height: 220px;
+    height: 160px;
   }
 }
 
@@ -282,6 +282,15 @@ h3 {
 
 .playModal.show {
   display: block;
+}
+
+@media (max-width: 768px) {
+  .playModal {
+    padding: 40% 15px;
+  }
+  .playModal iframe {
+    height: 35vh !important;
+  }
 }
 
 .banner {
@@ -473,12 +482,24 @@ h3 {
   .banner {
     margin-left: 70px;
   }
+  .banner::after {
+    background: #ffffffdb;
+  }
+  .banner .scroll-btn {
+    color: black;
+  }
+  .banner .banner-content {
+    width: 260px;
+    margin-right: 15px;
+  }
   .banner .banner-content .title {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 30px;
   }
   .banner .banner-inner .top-wrap ul {
     display: block;
+    margin-right: 0px;
+    padding-left: 0px;
   }
 }
 
@@ -1225,6 +1246,7 @@ h3 {
     font-size: 22px;
   }
   .nav-model .nav-wrap .second-wrap {
+    margin-top: 10%;
     padding: 15px;
   }
 }
@@ -1679,12 +1701,24 @@ h3 {
   .news-banner {
     margin-left: 70px;
   }
+  .news-banner::after {
+    background: #ffffffdb;
+  }
+  .news-banner .scroll-btn {
+    color: black;
+  }
+  .news-banner .banner-content {
+    width: 260px;
+    margin-right: 15px;
+  }
   .news-banner .banner-content .title {
     font-size: 32px;
     line-height: 40px;
   }
   .news-banner .banner-inner .top-wrap ul {
     display: block;
+    padding-left: 0px;
+    margin-right: 0px;
   }
 }
 
