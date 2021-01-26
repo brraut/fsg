@@ -83,63 +83,69 @@
     </div>
     <div
       class="banner"
-      style="background: url('assets/images/banner.jpg') no-repeat"
+      style="
+        background: url('assets/images/banner.jpg') no-repeat;
+        background-size: cover;
+      "
     >
       <!-- <div class="banner-container"> -->
       <div class="banner-inner">
-        <div class="container">
-          <div class="top-wrap">
-            <ul>
-              <li>
-                <a href=""
-                  ><span>A : </span> Kharkiv, 14/1 Heroiv Nebesnoi Sotni
-                  Square</a
-                >
-              </li>
+        <div class="top-wrap">
+          <ul>
+            <li>
+              <a href=""
+                ><span>A : </span> Kharkiv, 14/1 Heroiv Nebesnoi Sotni Square</a
+              >
+            </li>
 
-              <li>
-                <a href=""><span>P: </span> +38-050-685-8333</a>
-              </li>
+            <li>
+              <a href=""><span>P: </span> +38-050-685-8333</a>
+            </li>
 
+            <li>
+              <a href=""><span>E : </span> fsgconsult.office@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="banner-content">
+          <div class="title-sup">Welcome to FSG Consult</div>
+          <h1 class="title">
+            Professional <span>financial services</span> for businesses and
+            entrepreneurs
+          </h1>
+          <div class="other-wrap">
+            <div class="title-sub">
+              We are working hard to help clients find optimal sources of
+              business financing, while saving their time and money.
+            </div>
+            <ul class="title-ul">
               <li>
-                <a href=""><span>E : </span> fsgconsult.office@gmail.com</a>
+                <a href="">about company <i class="fa fa-arrow-right"></i></a>
+              </li>
+              <li>
+                <a href="">about services <i class="fa fa-arrow-right"></i></a>
               </li>
             </ul>
           </div>
-          <div class="row">
-            <div class="col-md-5"></div>
-            <div class="col-md-7">
-              <div class="banner-content">
-                <div class="title-sup">Welcome to FSG Consult</div>
-                <h1 class="title">
-                  Professional <span>financial services</span> for businesses
-                  and entrepreneurs
-                </h1>
-                <div class="other-wrap">
-                  <div class="title-sub">
-                    We are working hard to help clients find optimal sources of
-                    business financing, while saving their time and money.
-                  </div>
-                  <ul class="title-ul">
-                    <li>
-                      <a href=""
-                        >about company <i class="fa fa-arrow-right"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href=""
-                        >about services <i class="fa fa-arrow-right"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
+        <div class="play-wrap" onclick="myPlay()">
+          <img src="assets/images/play-video.png" class="img-fluid" alt="" />
         </div>
       </div>
+      <span class="scroll-btn" onclick="myscroll()">
+        <div class="scroll-name">Scroll</div>
+        <i class="fa fa-arrow-down"></i>
+      </span>
 
       <!-- </div> -->
+    </div>
+    <div class="playModal">
+      <div class="closeBtn" onclick="myStop()">&times;</div>
+      <iframe
+        class="myVideo"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY"
+      ></iframe>
     </div>
     <section class="welcome-section">
       <div class="container">
@@ -411,8 +417,7 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -428,6 +433,8 @@
       integrity="sha256-NXRS8qVcmZ3dOv3LziwznUHPegFhPZ1F/4inU7uC8h0="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
