@@ -1,36 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-@font-face {
-  font-family: "Gilroy";
-  src: url("Gilroy-Bold.woff2") format("woff2"), url("Gilroy-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  src: url("Gilroy-Medium.woff2") format("woff2"), url("Gilroy-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  src: url("Gilroy-Semibold.woff2") format("woff2"), url("Gilroy-Semibold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  src: url("Gilroy-Regular.woff2") format("woff2"), url("Gilroy-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -39,7 +7,7 @@ body {
   padding: 30px 25px 0px 25px;
   margin: 0;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Gilroy", sans-serif;
   background: #f4f4f4;
   overflow-x: hidden;
 }
@@ -85,7 +53,7 @@ h3 {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 90px;
+  width: 95px;
   overflow: hidden;
   background: #f4f4f4;
   -webkit-box-orient: vertical;
@@ -104,18 +72,19 @@ h3 {
 .navbar .logo a .name {
   color: black;
   font-size: 24px;
-  font-weight: bold;
+  letter-spacing: 0px;
+  font-weight: bolder;
 }
 
 .navbar .logo a .name .sub {
-  font-size: 8px;
+  font-size: 6px;
   margin-left: -5px;
 }
 
 .navbar .logo a .sub-name {
   margin-top: -10px;
-  font-size: 11px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: bold;
   color: #773cfc;
 }
 
@@ -317,7 +286,6 @@ h3 {
 .banner .play-wrap {
   position: absolute;
   left: 40%;
-  right: 0;
   bottom: 30px;
   cursor: pointer;
 }
@@ -392,9 +360,9 @@ h3 {
 }
 
 .banner .banner-content .title {
-  font-size: 41.35338px;
+  font-size: 43.60902px;
   color: black;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
   line-height: 56.39098px;
 }
 
@@ -407,8 +375,8 @@ h3 {
 }
 
 .banner .banner-content .title-sup {
-  font-size: 16px;
-  margin-left: 35px;
+  font-size: 15px;
+  margin-left: 18px;
   text-align: left;
   color: #b1b1b1;
   font-weight: lighter;
@@ -430,8 +398,7 @@ h3 {
 }
 
 .banner .banner-content .other-wrap .title-sub {
-  font-size: 14px;
-  font-weight: lighter;
+  font-size: 15px;
   line-height: 160%;
   color: #000000;
 }
@@ -446,6 +413,7 @@ h3 {
 .banner .banner-content .other-wrap .title-ul a {
   text-decoration: none;
   color: black;
+  font-weight: 500;
   font-size: 14px;
   line-height: 180%;
 }
@@ -510,15 +478,40 @@ h3 {
 
 .welcome-section .text-box1 {
   color: #773cfc;
-  font-size: 19.54887px;
-  line-height: 27.06767px;
+  font-size: 26px;
+  line-height: 36px;
   font-weight: 500;
 }
 
 .welcome-section .text-box {
   margin-top: 60px;
-  font-size: 13.53383px;
-  line-height: 20.30075px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+}
+
+.welcome-section .text-box ul {
+  list-style: square;
+  font-size: 15px;
+  padding-left: 15px;
+  line-height: 25px;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.welcome-section .text-box ul li {
+  margin-bottom: 15px;
+}
+
+.welcome-section .text-box a {
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 600;
+  color: black;
+}
+
+.welcome-section .text-box a i {
+  padding-left: 5px;
 }
 
 .welcome-section .back-text {
@@ -555,15 +548,15 @@ h3 {
 }
 
 .circle-section .info-box {
-  font-size: 13.53383px;
-  line-height: 20.30075px;
+  font-size: 18px;
+  line-height: 27px;
   color: black;
   width: 300px;
 }
 
 .circle-section .info-box-second {
-  font-size: 13.53383px;
-  line-height: 20.30075px;
+  font-size: 18px;
+  line-height: 27px;
   color: black;
   margin: 150px 60px 0 auto;
   width: 400px;
@@ -735,12 +728,49 @@ h3 {
   font-weight: 500;
 }
 
+.news-section .date-wrap {
+  position: relative;
+  z-index: 0;
+}
+
+.news-section .date-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 20px;
+  left: -6px;
+  background: #f4f4f4;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-bottom-left-radius: 50%;
+  width: 20px;
+  z-index: -1;
+}
+
+.news-section .date-wrap::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 80%;
+  height: 1px;
+  z-index: -1;
+  right: -25px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(33%, #f4f4f4), color-stop(0%, rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to right, #f4f4f4 33%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 25px 1px;
+  background-repeat: repeat-x;
+}
+
 .news-section .date {
   font-size: 11.2782px;
   line-height: 19.54887px;
   margin-top: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-weight: 500;
+  z-index: 1;
 }
 
 .news-section .col-lg-3:first-child .news-item {
@@ -762,6 +792,7 @@ h3 {
   position: relative;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
+  position: relative;
 }
 
 .news-section .news-item:hover {
@@ -774,6 +805,12 @@ h3 {
   display: block;
   -webkit-box-shadow: 0px -2px 10px #c1c1c1;
           box-shadow: 0px -2px 10px #c1c1c1;
+}
+
+.news-section .news-item .bookmark {
+  position: absolute;
+  top: -5px;
+  right: 20px;
 }
 
 .news-section .news-item .news-title {
@@ -851,19 +888,37 @@ h3 {
   }
 }
 
+.people-hr {
+  width: 100%;
+  margin-left: 40px;
+}
+
 .believe {
   margin-left: 90px;
-  padding: 120px 0px 90px 0px;
+  padding: 90px 0px 90px 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.believe .img-container {
+  position: absolute;
+  top: 120px;
+  left: -20px;
+  z-index: -1;
+}
+
+.believe .img-container img {
+  height: 460px;
 }
 
 .believe .description {
-  font-size: 11.2782px;
-  line-height: 18.79699px;
+  font-size: 14.5px;
+  line-height: 25px;
   font-weight: 500;
 }
 
 .believe a {
-  font-size: 11.2782px;
+  font-size: 14.28571px;
   color: white;
   background: black;
   line-height: 45px;
@@ -872,18 +927,30 @@ h3 {
   display: inline-block;
   padding: 0px 30px;
   margin-top: 20px;
+  font-weight: 600;
 }
 
 .believe .title {
-  font-size: 33.83459px;
-  line-height: 45.11278px;
+  font-size: 46px;
+  line-height: 60px;
   color: #773cfc;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @media (max-width: 1024px) {
   .believe {
     margin-left: 75px;
+  }
+  .believe .img-container {
+    position: absolute;
+    top: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .believe .img-container {
+    position: absolute;
+    top: 200px;
   }
 }
 
@@ -895,6 +962,9 @@ h3 {
     margin-top: 30px;
     font-size: 20px;
     line-height: 120%;
+  }
+  .believe .img-container {
+    display: none;
   }
 }
 
@@ -914,8 +984,8 @@ h3 {
 }
 
 .footer .main-content {
-  border-top: 1px solid #2c2c2c;
-  border-bottom: 1px solid #2c2c2c;
+  border-top: 0.5px solid #1d1d1d;
+  border-bottom: 0.5px solid #1d1d1d;
   color: white;
   margin-top: 30px;
   padding: 30px 0;
@@ -923,8 +993,8 @@ h3 {
 
 .footer .main-content .title {
   text-transform: uppercase;
-  font-size: 13.53383px;
-  line-height: 15.03759px;
+  font-size: 18px;
+  line-height: 20px;
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -941,8 +1011,8 @@ h3 {
 
 .footer .main-content ul li a {
   color: white;
-  font-size: 11.2782px;
-  line-height: 15.03759px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .footer .main-content .social-link {
@@ -985,12 +1055,12 @@ h3 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   color: white;
-  font-size: 11.2782px;
+  font-size: 14px;
   line-height: 60px;
 }
 
 .footer .bottom-footer .first-wrap span {
-  padding: 0px 15px;
+  padding: 0px 5px;
 }
 
 .footer .bottom-footer .first-wrap span a {
@@ -1735,13 +1805,43 @@ h3 {
   border-bottom: none;
 }
 
+.news-section.news-page .article-item {
+  border: 1px solid #dfdcdc;
+}
+
+.news-section.news-page .button-container .read-btn {
+  padding: 0px 60px;
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+.news-section.news-page .date-wrap {
+  position: relative;
+  z-index: 0;
+}
+
+.news-section.news-page .date-wrap::after {
+  content: "";
+  background: #e2e2e2;
+}
+
+.news-section.news-page .date-wrap::before {
+  content: "";
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(33%, #e2e2e2), color-stop(0%, rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to right, #e2e2e2 33%, rgba(255, 255, 255, 0) 0%);
+}
+
 .single-section {
-  margin: 0 15%;
   margin-top: 45px;
   margin-left: 90px;
 }
 
+.single-section .container {
+  width: 900px;
+}
+
 .single-section .news-section {
+  margin-left: 0;
   background-color: transparent;
 }
 
@@ -1750,7 +1850,57 @@ h3 {
 }
 
 .single-section .news-section .news-item:hover {
-  border-color: #c3c3c3;
+  border: 20px solid #c3c3c3;
+  border-bottom: none;
+  padding-bottom: 10px;
+}
+
+.single-section .news-section .news-item:hover .read {
+  display: block;
+  -webkit-box-shadow: 0px -2px 10px #c1c1c1;
+          box-shadow: 0px -2px 10px #c1c1c1;
+}
+
+.single-section .news-section .news-item .bookmark {
+  position: absolute;
+  top: -5px;
+  right: 20px;
+}
+
+.single-section .news-section .date-wrap {
+  position: relative;
+  z-index: 0;
+}
+
+.single-section .news-section .date-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 20px;
+  left: -6px;
+  background: #e2e2e2;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-bottom-left-radius: 50%;
+  width: 20px;
+  z-index: -1;
+}
+
+.single-section .news-section .date-wrap::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 80%;
+  height: 1px;
+  z-index: -1;
+  right: -25px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(33%, #e2e2e2), color-stop(0%, rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to right, #e2e2e2 33%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 25px 1px;
+  background-repeat: repeat-x;
 }
 
 .single-section h2 {
@@ -1821,6 +1971,10 @@ h3 {
   margin-left: 90px;
 }
 
+.people-banner .top-wrap {
+  margin-right: 30px;
+}
+
 .people-banner .top-wrap ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1855,10 +2009,10 @@ h3 {
 }
 
 .people-banner .main-title {
-  font-size: 36.09023px;
+  font-size: 39.09774px;
   line-height: 45.11278px;
   text-align: right;
-  font-weight: bold;
+  font-weight: bolder;
   color: black;
 }
 
@@ -1869,8 +2023,8 @@ h3 {
 
 .people-banner .quote {
   margin-top: 10px;
-  font-size: 11.2782px;
-  line-height: 17.29323px;
+  font-size: 14.28571px;
+  line-height: 22.55639px;
 }
 
 .people-banner .quote .quote-bottom {
@@ -1883,8 +2037,8 @@ h3 {
   border-top-left-radius: 100%;
   padding: 70px 0px 0px 45px;
   left: 44px;
-  border-left: 1px solid gray;
-  border-top: 1px solid gray;
+  border-left: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
   font-size: 12px;
   margin-right: 28px;
   margin-left: auto;
@@ -1944,6 +2098,11 @@ h3 {
 .team {
   margin: 45px auto;
   margin-left: 90px;
+}
+
+.team .col-md-4 {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .team .team-item {
@@ -2199,7 +2358,7 @@ h3 {
 }
 
 .service-banner .main-title {
-  font-size: 36.09023px;
+  font-size: 37.59398px;
   line-height: 45.11278px;
   text-align: right;
   font-weight: bold;
@@ -2212,9 +2371,9 @@ h3 {
 }
 
 .service-banner .quote {
-  margin-top: 10px;
-  font-size: 11.2782px;
-  line-height: 17.29323px;
+  margin-top: 0px;
+  font-size: 13.53383px;
+  line-height: 22.55639px;
 }
 
 .service-banner .quote .quote-bottom {
@@ -2238,9 +2397,9 @@ h3 {
 
 .fullfill-welcome-section .text-box1 {
   color: #000;
-  font-size: 19.54887px;
-  line-height: 27.06767px;
-  font-weight: 500;
+  font-size: 21.05263px;
+  line-height: 34.58647px;
+  font-weight: 600;
 }
 
 .fullfill-welcome-section .text-box1 span {
@@ -2249,8 +2408,8 @@ h3 {
 
 .fullfill-welcome-section .text-box {
   margin-bottom: 45px;
-  font-size: 13.53383px;
-  line-height: 20.30075px;
+  font-size: 15.78947px;
+  line-height: 22.55639px;
 }
 
 .fullfill-welcome-section .back-text {
@@ -2277,20 +2436,20 @@ h3 {
   color: #000000;
   font-size: 19.54887px;
   line-height: 27.06767px;
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 60px;
 }
 
 .fulfill .text-box {
   margin-top: 50px;
-  font-size: 13.53383px;
-  line-height: 20.30075px;
+  font-size: 15.78947px;
+  line-height: 22.55639px;
 }
 
 .fulfill .text-box ul {
   margin: 0;
   padding: 0;
-  font-size: 15.03759px;
+  font-size: 17.29323px;
   font-weight: bold;
   list-style: none;
   line-height: 20.30075px;
